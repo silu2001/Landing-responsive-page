@@ -1,0 +1,272 @@
+#bar {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#close {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+    .nav-links {
+
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 10px;
+        background-color: #e3ae8a;
+        padding: 10px 0;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: 50px;
+        height: 100vh;
+        width: 200px;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+
+    }
+
+    .nav-links.active {
+        right: 0px;
+    }
+
+    #bar {
+        display: block;
+    }
+
+    .nav-links a {
+        padding: 10px 20px;
+
+    }
+
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 5px;
+        left: -10px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 50px;
+        text-align: center;
+        height: 83vh;
+    }
+
+    .hero-image img {
+        padding: 0px 100px;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .btn-primary {
+        font-size: 15px;
+    }
+
+    .search-box {
+        flex-direction: column;
+
+        padding: 20px;
+    }
+
+    .input-group {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .btn-primary {
+        /* width: 100%; */
+        text-align: center;
+    }
+
+    .dream-home-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 30px;
+    }
+
+    .image-container img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .content h1 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .stats {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .footer {
+        height: auto;
+        padding: 2rem 1.5rem;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+        justify-content: space-between;
+       
+    }
+
+    .footer-section,
+    .footer-logo {
+        flex: 1 1 45%;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-logo {
+        max-width: 100%;
+    }
+
+
+}
+
+@media (max-width: 488px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 15px;
+    }
+
+    .nav-icons {
+        width: 100%;
+        /* justify-content: space-between; */
+    }
+
+
+
+    .nav-links a {
+        padding: 10px 20px;
+        border-bottom: 1px solid #e0d6d0;
+    }
+
+    .nav-links.active {
+        right: 0px;
+    }
+
+    #bar {
+        display: block;
+    }
+
+    .logo {
+        width: 90px;
+        margin-right: 10px;
+    }
+
+    .hero {
+        padding: 30px 20px;
+        height: 59vh;
+    }
+
+    .hero-content h1 {
+        font-size: 25px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .search-box {
+        gap: 15px;
+        padding: 20px 15px;
+    }
+
+    .input-group {
+        padding: 8px 12px;
+    }
+
+    .input-group input {
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .dream-home-section {
+        padding: 0 20px;
+    }
+
+    .content h1 {
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .stat-box h2 {
+        font-size: 22px;
+    }
+
+    .stat-box p {
+        font-size: 13px;
+    }
+
+    .stats {
+        gap: 20px;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .footer-section,
+    .footer-logo {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-list li,
+    .description {
+        font-size: 0.85rem;
+    }
+
+    .social-item span {
+        font-size: 0.85rem;
+    }
+
+    .footer {
+        padding: 2rem 1rem;
+    }
+
+
+}
