@@ -1,23 +1,31 @@
-// const hamburger = document.getElementById('hamburger');
-// const navLinks = document.getElementById('navLinks');
 
+const hamburger = document.getElementById("bar");
+const navLinks = document.getElementById("navLinks"); // Changed to ID for direct access
+const closeIcon = document.getElementById("close");
 
-// hamburger.addEventListener('click', () => {
-//   navLinks.classList.toggle('active');
+hamburger.addEventListener("click", () => {
+    navLinks.classList.add("active");
+});
+
+closeIcon.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+});
+
+// // Optional: Close the menu if a link is clicked (useful for single-page apps)
+// navLinks.querySelectorAll('a:not(#close)').forEach(link => {
+//     link.addEventListener('click', () => {
+//         if (navLinks.classList.contains('active')) {
+//             navLinks.classList.remove('active');
+//         }
+//     });
 // });
 
-const bar = document.getElementById('bar');
-const close = document.getElementById('close');
-const nav = document.querySelector('.nav-links'); // Corrected this line
+// // Optional: Close the menu if the window is resized to a larger size
+// window.addEventListener('resize', () => {
+//     if (window.innerWidth > 768) { // Assuming 768px is your mobile breakpoint
+//         navLinks.classList.remove('active');
+//     }
+// });
 
-if (bar) {
-    bar.addEventListener('click', () => {
-        nav.classList.add('active');
-    });
-}
 
-if (close) {
-    close.addEventListener('click', () => {
-        nav.classList.remove('active');
-    });
-}
+
